@@ -14,6 +14,7 @@
 		1A352C5C295D3743008DDC49 /* DailySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C5B295D3743008DDC49 /* DailySwiftUITests.swift */; };
 		1A352C66295D3743008DDC49 /* DailySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C65295D3743008DDC49 /* DailySwiftUIUITests.swift */; };
 		1A352C68295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */; };
+		1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A603859295EB5D200DA67DA /* AnimatingCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1A352C61295D3743008DDC49 /* DailySwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailySwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A352C65295D3743008DDC49 /* DailySwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIUITests.swift; sourceTree = "<group>"; };
 		1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A603859295EB5D200DA67DA /* AnimatingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		1A352C49295D3741008DDC49 /* DailySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1A603858295E58A600DA67DA /* Animations */,
 				1A352C4A295D3741008DDC49 /* DailySwiftUIApp.swift */,
 				1A352C4C295D3741008DDC49 /* ContentView.swift */,
 				1A352C4E295D3743008DDC49 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */,
 			);
 			path = DailySwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		1A603858295E58A600DA67DA /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1A603859295EB5D200DA67DA /* AnimatingCircle.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */,
 				1A352C4D295D3741008DDC49 /* ContentView.swift in Sources */,
 				1A352C4B295D3741008DDC49 /* DailySwiftUIApp.swift in Sources */,
 			);
