@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct DailySwiftUIApp: App {    
+struct DailySwiftUIApp: App {
+    
+    @StateObject var router = Router()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(router)
         }
     }
 }

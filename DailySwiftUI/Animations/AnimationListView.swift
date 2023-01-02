@@ -9,25 +9,24 @@ import SwiftUI
 
 enum AnimationType {
     case circle
+    case recordBox
     
     var title: String {
         switch self {
         case .circle:
             return "원 움직임"
+        case .recordBox:
+            return "레코드 박스"
         }
     }
     
-    var view: some View {
-        switch self {
-        case .circle:
-            return AnimatingCircle()
-        }
-    }
 }
 
 struct AnimationListView: View {
     
-    var animationTypes: [AnimationType] = [.circle]
+    @EnvironmentObject var router: Router
+    
+    var animationTypes: [AnimationType] = [.circle, .recordBox]
     
     var body: some View {
         
@@ -36,6 +35,15 @@ struct AnimationListView: View {
                 NavigationLink(content.title, value: content)
             }
             .navigationTitle("Animation Examples")
+            .navigationDestination(for: AnimationType.self) { type in
+                switch type {
+                case .circle:
+                    AnimatingCircle()
+                case .recordBox:
+                    RecordBoxView()
+                }
+            }
+
         }
         
     }
@@ -44,5 +52,6 @@ struct AnimationListView: View {
 struct AnimationListView_Previews: PreviewProvider {
     static var previews: some View {
         AnimationListView()
+            .environmentObject(Router())
     }
 }

@@ -18,6 +18,10 @@
 		1AC80208296248CA00F95F57 /* LongPressExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC80207296248CA00F95F57 /* LongPressExample.swift */; };
 		1AC8020A29624E4500F95F57 /* GestureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8020929624E4500F95F57 /* GestureListView.swift */; };
 		1AC8020C29624E6600F95F57 /* AnimationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8020B29624E6600F95F57 /* AnimationListView.swift */; };
+		1AC8020E29625D4200F95F57 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8020D29625D4200F95F57 /* Router.swift */; };
+		1AC802102962629000F95F57 /* RecordBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8020F2962629000F95F57 /* RecordBoxView.swift */; };
+		1AC80213296263AD00F95F57 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC80212296263AD00F95F57 /* music.m4a */; };
+		1AC8021529626D1400F95F57 /* RecordPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8021429626D1400F95F57 /* RecordPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		1AC80207296248CA00F95F57 /* LongPressExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressExample.swift; sourceTree = "<group>"; };
 		1AC8020929624E4500F95F57 /* GestureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureListView.swift; sourceTree = "<group>"; };
 		1AC8020B29624E6600F95F57 /* AnimationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListView.swift; sourceTree = "<group>"; };
+		1AC8020D29625D4200F95F57 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1AC8020F2962629000F95F57 /* RecordBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordBoxView.swift; sourceTree = "<group>"; };
+		1AC80212296263AD00F95F57 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
+		1AC8021429626D1400F95F57 /* RecordPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 				1A352C4C295D3741008DDC49 /* ContentView.swift */,
 				1A352C4E295D3743008DDC49 /* Assets.xcassets */,
 				1A352C50295D3743008DDC49 /* Preview Content */,
+				1AC8020D29625D4200F95F57 /* Router.swift */,
 			);
 			path = DailySwiftUI;
 			sourceTree = "<group>";
@@ -141,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				1AC8020B29624E6600F95F57 /* AnimationListView.swift */,
+				1AC802112962637400F95F57 /* RecordBox */,
 				1A603859295EB5D200DA67DA /* AnimatingCircle.swift */,
 			);
 			path = Animations;
@@ -153,6 +163,16 @@
 				1AC80207296248CA00F95F57 /* LongPressExample.swift */,
 			);
 			path = LongPress;
+			sourceTree = "<group>";
+		};
+		1AC802112962637400F95F57 /* RecordBox */ = {
+			isa = PBXGroup;
+			children = (
+				1AC80212296263AD00F95F57 /* music.m4a */,
+				1AC8020F2962629000F95F57 /* RecordBoxView.swift */,
+				1AC8021429626D1400F95F57 /* RecordPlayer.swift */,
+			);
+			path = RecordBox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +281,7 @@
 			files = (
 				1A352C52295D3743008DDC49 /* Preview Assets.xcassets in Resources */,
 				1A352C4F295D3743008DDC49 /* Assets.xcassets in Resources */,
+				1AC80213296263AD00F95F57 /* music.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +307,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */,
+				1AC802102962629000F95F57 /* RecordBoxView.swift in Sources */,
 				1A352C4D295D3741008DDC49 /* ContentView.swift in Sources */,
 				1AC80208296248CA00F95F57 /* LongPressExample.swift in Sources */,
+				1AC8020E29625D4200F95F57 /* Router.swift in Sources */,
 				1A352C4B295D3741008DDC49 /* DailySwiftUIApp.swift in Sources */,
+				1AC8021529626D1400F95F57 /* RecordPlayer.swift in Sources */,
 				1AC8020A29624E4500F95F57 /* GestureListView.swift in Sources */,
 				1AC8020C29624E6600F95F57 /* AnimationListView.swift in Sources */,
 			);

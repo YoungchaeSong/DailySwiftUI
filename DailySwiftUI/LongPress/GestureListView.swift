@@ -17,15 +17,12 @@ enum GestureType {
         }
     }
     
-    var view: some View {
-        switch self {
-        case .longPress:
-            return LongPressExample()
-        }
-    }
 }
 
 struct GestureListView: View {
+    
+    @EnvironmentObject var router: Router
+    
     var gestureTypes: [GestureType] = [.longPress]
     
     var body: some View {
@@ -35,6 +32,13 @@ struct GestureListView: View {
                 NavigationLink(content.title, value: content)
             }
             .navigationTitle("Gesture Examples")
+            .navigationDestination(for: GestureType.self) { type in
+                switch type {
+                case .longPress:
+                    LongPressExample()
+                }
+            }
+
         }
         
     }
@@ -43,5 +47,6 @@ struct GestureListView: View {
 struct GestureListView_Previews: PreviewProvider {
     static var previews: some View {
         GestureListView()
+            .environmentObject(Router())
     }
 }

@@ -22,15 +22,15 @@ enum DailySwiftUIType {
     
 }
 
-// https://www.youtube.com/watch?v=oxp8Qqwr4AY (NavigationStack)
+// https://youTube.com/StewartLynch
 struct ContentView: View {
     
-    @State private var path = NavigationPath()
+    @EnvironmentObject var router: Router
     
     var dailyContentList: [DailySwiftUIType] = [.animation, .gesture]
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.path) {
             List(dailyContentList, id:\.title) { content in
                 NavigationLink(content.title, value: content)
             }
@@ -42,12 +42,6 @@ struct ContentView: View {
                 case .gesture:
                     GestureListView()
                 }
-            }
-            .navigationDestination(for: AnimationType.self) { type in
-                type.view
-            }
-            .navigationDestination(for: GestureType.self) { type in
-                type.view
             }
         }
     }
