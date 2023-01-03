@@ -15,6 +15,8 @@
 		1A352C66295D3743008DDC49 /* DailySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C65295D3743008DDC49 /* DailySwiftUIUITests.swift */; };
 		1A352C68295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */; };
 		1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A603859295EB5D200DA67DA /* AnimatingCircle.swift */; };
+		1A7D20D629639F3700FE61A1 /* RefactoringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D20D529639F3700FE61A1 /* RefactoringListView.swift */; };
+		1A7D20D829639FD300FE61A1 /* PerformanceTuning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D20D729639FD300FE61A1 /* PerformanceTuning.swift */; };
 		1AC80208296248CA00F95F57 /* LongPressExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC80207296248CA00F95F57 /* LongPressExample.swift */; };
 		1AC8020A29624E4500F95F57 /* GestureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8020929624E4500F95F57 /* GestureListView.swift */; };
 		1AC8020C29624E6600F95F57 /* AnimationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8020B29624E6600F95F57 /* AnimationListView.swift */; };
@@ -53,6 +55,8 @@
 		1A352C65295D3743008DDC49 /* DailySwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIUITests.swift; sourceTree = "<group>"; };
 		1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1A603859295EB5D200DA67DA /* AnimatingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingCircle.swift; sourceTree = "<group>"; };
+		1A7D20D529639F3700FE61A1 /* RefactoringListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoringListView.swift; sourceTree = "<group>"; };
+		1A7D20D729639FD300FE61A1 /* PerformanceTuning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTuning.swift; sourceTree = "<group>"; };
 		1AC80207296248CA00F95F57 /* LongPressExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressExample.swift; sourceTree = "<group>"; };
 		1AC8020929624E4500F95F57 /* GestureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureListView.swift; sourceTree = "<group>"; };
 		1AC8020B29624E6600F95F57 /* AnimationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		1A352C49295D3741008DDC49 /* DailySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1A7D20D229639E8500FE61A1 /* Refactoring */,
 				1AC80206296248B100F95F57 /* LongPress */,
 				1A603858295E58A600DA67DA /* Animations */,
 				1A352C4A295D3741008DDC49 /* DailySwiftUIApp.swift */,
@@ -154,6 +159,15 @@
 				1A603859295EB5D200DA67DA /* AnimatingCircle.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		1A7D20D229639E8500FE61A1 /* Refactoring */ = {
+			isa = PBXGroup;
+			children = (
+				1A7D20D529639F3700FE61A1 /* RefactoringListView.swift */,
+				1A7D20D729639FD300FE61A1 /* PerformanceTuning.swift */,
+			);
+			path = Refactoring;
 			sourceTree = "<group>";
 		};
 		1AC80206296248B100F95F57 /* LongPress */ = {
@@ -308,7 +322,9 @@
 			files = (
 				1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */,
 				1AC802102962629000F95F57 /* RecordBoxView.swift in Sources */,
+				1A7D20D829639FD300FE61A1 /* PerformanceTuning.swift in Sources */,
 				1A352C4D295D3741008DDC49 /* ContentView.swift in Sources */,
+				1A7D20D629639F3700FE61A1 /* RefactoringListView.swift in Sources */,
 				1AC80208296248CA00F95F57 /* LongPressExample.swift in Sources */,
 				1AC8020E29625D4200F95F57 /* Router.swift in Sources */,
 				1A352C4B295D3741008DDC49 /* DailySwiftUIApp.swift in Sources */,

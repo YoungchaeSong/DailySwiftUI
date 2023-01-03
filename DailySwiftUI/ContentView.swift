@@ -10,6 +10,7 @@ import SwiftUI
 enum DailySwiftUIType {
     case animation
     case gesture
+    case refactoring
     
     var title: String {
         switch self {
@@ -17,6 +18,8 @@ enum DailySwiftUIType {
             return "에니메이션"
         case .gesture:
             return "제스쳐"
+        case .refactoring:
+            return "성능 개선"
         }
     }
     
@@ -41,6 +44,8 @@ struct ContentView: View {
                     AnimationListView()
                 case .gesture:
                     GestureListView()
+                case .refactoring:
+                    RefactoringListView()
                 }
             }
         }
