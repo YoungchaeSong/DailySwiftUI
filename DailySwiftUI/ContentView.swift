@@ -30,7 +30,7 @@ struct ContentView: View {
     
     @EnvironmentObject var router: Router
     
-    var dailyContentList: [DailySwiftUIType] = [.animation, .gesture]
+    var dailyContentList: [DailySwiftUIType] = [.animation, .gesture, .refactoring]
     
     var body: some View {
         NavigationStack(path: $router.path) {

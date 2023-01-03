@@ -10,6 +10,7 @@ import SwiftUI
 enum AnimationType {
     case circle
     case recordBox
+    case transition
     
     var title: String {
         switch self {
@@ -17,6 +18,8 @@ enum AnimationType {
             return "원 움직임"
         case .recordBox:
             return "레코드 박스"
+        case .transition:
+            return "트렌지션"
         }
     }
     
@@ -26,7 +29,7 @@ struct AnimationListView: View {
     
     @EnvironmentObject var router: Router
     
-    var animationTypes: [AnimationType] = [.circle, .recordBox]
+    var animationTypes: [AnimationType] = [.circle, .recordBox, .transition]
     
     var body: some View {
         
@@ -41,6 +44,8 @@ struct AnimationListView: View {
                     AnimatingCircle()
                 case .recordBox:
                     RecordBoxView()
+                case .transition:
+                    AnimateTransitionView()
                 }
             }
 
