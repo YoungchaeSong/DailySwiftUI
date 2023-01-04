@@ -14,6 +14,7 @@
 		1A352C5C295D3743008DDC49 /* DailySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C5B295D3743008DDC49 /* DailySwiftUITests.swift */; };
 		1A352C66295D3743008DDC49 /* DailySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C65295D3743008DDC49 /* DailySwiftUIUITests.swift */; };
 		1A352C68295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */; };
+		1A4EBCD729650095007DF02C /* ParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EBCD629650095007DF02C /* ParallaxEffect.swift */; };
 		1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A603859295EB5D200DA67DA /* AnimatingCircle.swift */; };
 		1A7D20D629639F3700FE61A1 /* RefactoringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D20D529639F3700FE61A1 /* RefactoringListView.swift */; };
 		1A7D20D829639FD300FE61A1 /* PerformanceTuning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D20D729639FD300FE61A1 /* PerformanceTuning.swift */; };
@@ -56,6 +57,7 @@
 		1A352C61295D3743008DDC49 /* DailySwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailySwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A352C65295D3743008DDC49 /* DailySwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIUITests.swift; sourceTree = "<group>"; };
 		1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A4EBCD629650095007DF02C /* ParallaxEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxEffect.swift; sourceTree = "<group>"; };
 		1A603859295EB5D200DA67DA /* AnimatingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingCircle.swift; sourceTree = "<group>"; };
 		1A7D20D529639F3700FE61A1 /* RefactoringListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoringListView.swift; sourceTree = "<group>"; };
 		1A7D20D729639FD300FE61A1 /* PerformanceTuning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTuning.swift; sourceTree = "<group>"; };
@@ -155,6 +157,13 @@
 			path = DailySwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		1A4EBCD8296504F5007DF02C /* Elevator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Elevator;
+			sourceTree = "<group>";
+		};
 		1A603858295E58A600DA67DA /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +171,8 @@
 				1A603859295EB5D200DA67DA /* AnimatingCircle.swift */,
 				1AC802112962637400F95F57 /* RecordBox */,
 				1A7D20D92963EFAC00FE61A1 /* AnimateTransition */,
+				1A4EBCD629650095007DF02C /* ParallaxEffect.swift */,
+				1A4EBCD8296504F5007DF02C /* Elevator */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -345,6 +356,7 @@
 				1AC8021529626D1400F95F57 /* RecordPlayer.swift in Sources */,
 				1A7D20DB2963F00100FE61A1 /* SettingView.swift in Sources */,
 				1AC8020A29624E4500F95F57 /* GestureListView.swift in Sources */,
+				1A4EBCD729650095007DF02C /* ParallaxEffect.swift in Sources */,
 				1A7D20DD2963F63400FE61A1 /* AnimateTransitionView.swift in Sources */,
 				1AC8020C29624E6600F95F57 /* AnimationListView.swift in Sources */,
 			);

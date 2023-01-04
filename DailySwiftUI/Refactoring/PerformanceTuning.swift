@@ -118,8 +118,6 @@ struct PerformanceTuning: View {
             
             // MARK: - 24. Use the performance tools in Xcode
             
-            
-            SimpleGestureExample()
         }
     }
 }
