@@ -89,7 +89,7 @@ struct PerformanceTuning: View {
             /**
              https://seons-dev.tistory.com/135
              */
-
+            
             // MARK: - 17. Use .simultaneousGesture() to handle multiple gestures on a single view
             /**
              한뷰에 중복 제스쳐를 확인하도록 도와준다.
@@ -101,25 +101,25 @@ struct PerformanceTuning: View {
              .transition 과 .animation(_:) modifiers를 사용하면 보기에 대한 변경 사항을 애니메이션으로 만들 수 있지만 많은 수의 보기에 사용하는 데 비용이 많이 들 수 있습니다.
              한 번에 많은 보기에 대한 변경 사항을 애니메이션으로 만들어야 하는 경우 성능을 향상시키기 위해 withAnimation()과 같은 하위 수준 애니메이션 기술을 사용하는 것이 좋습니다.
              */
-
+            
             // MARK: - 19. Avoid using .padding and .frame together
             /**
              동일한 뷰에서 .padding 및 .frame을 모두 사용하면 불필요한 레이아웃 계산이 수행되어 성능에 부정적인 영향을 미칠 수 있습니다.
-
+             
              대신 필요에 따라 둘 중 하나를 사용하십시오.
              */
             // MARK: - 20. Avoid using .clipShape, .shadow() and .overlay together
             
             // MARK: - 21. Use GeometryReader occasionally
-
+            
             // MARK: - 22. Use .fixedSize() to specify the size of views that don't change
-
+            
             // MARK: - 23. Avoid using complex expressions in your view declarations
-
+            
             // MARK: - 24. Use the performance tools in Xcode
-
-
-
+            
+            
+            SimpleGestureExample()
         }
     }
 }
@@ -281,7 +281,7 @@ struct SimultaneousGestureExample: View {
     var body: some View {
         Circle()
             .fill(isDoubleTapped ? .blue : .red)
-            .frame(width: 200, height: 200)
+            .frame(width: isLongTapped ? 100 : 200, height: isLongTapped ? 100 : 200)
             .simultaneousGesture(LongPressGesture().onEnded({ _ in
                 isLongTapped.toggle()
             }))
