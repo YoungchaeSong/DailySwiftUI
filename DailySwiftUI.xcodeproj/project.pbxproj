@@ -27,6 +27,8 @@
 		1AC802102962629000F95F57 /* RecordBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8020F2962629000F95F57 /* RecordBoxView.swift */; };
 		1AC80213296263AD00F95F57 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1AC80212296263AD00F95F57 /* music.m4a */; };
 		1AC8021529626D1400F95F57 /* RecordPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8021429626D1400F95F57 /* RecordPlayer.swift */; };
+		1AED1BC12977B5CA00E6929B /* LazyVGridExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED1BC02977B5CA00E6929B /* LazyVGridExample.swift */; };
+		1AED1BC32977BFA200E6929B /* LazyHGridExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED1BC22977BFA200E6929B /* LazyHGridExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		1AC8020F2962629000F95F57 /* RecordBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordBoxView.swift; sourceTree = "<group>"; };
 		1AC80212296263AD00F95F57 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
 		1AC8021429626D1400F95F57 /* RecordPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPlayer.swift; sourceTree = "<group>"; };
+		1AED1BC02977B5CA00E6929B /* LazyVGridExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridExample.swift; sourceTree = "<group>"; };
+		1AED1BC22977BFA200E6929B /* LazyHGridExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		1A352C49295D3741008DDC49 /* DailySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1AED1BBF2977B59E00E6929B /* Gride */,
 				1A7D20D229639E8500FE61A1 /* Refactoring */,
 				1AC80206296248B100F95F57 /* LongPress */,
 				1A603858295E58A600DA67DA /* Animations */,
@@ -212,6 +217,15 @@
 				1AC8021429626D1400F95F57 /* RecordPlayer.swift */,
 			);
 			path = RecordBox;
+			sourceTree = "<group>";
+		};
+		1AED1BBF2977B59E00E6929B /* Gride */ = {
+			isa = PBXGroup;
+			children = (
+				1AED1BC02977B5CA00E6929B /* LazyVGridExample.swift */,
+				1AED1BC22977BFA200E6929B /* LazyHGridExample.swift */,
+			);
+			path = Gride;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +370,9 @@
 				1AC8021529626D1400F95F57 /* RecordPlayer.swift in Sources */,
 				1A7D20DB2963F00100FE61A1 /* SettingView.swift in Sources */,
 				1AC8020A29624E4500F95F57 /* GestureListView.swift in Sources */,
+				1AED1BC32977BFA200E6929B /* LazyHGridExample.swift in Sources */,
 				1A4EBCD729650095007DF02C /* ParallaxEffect.swift in Sources */,
+				1AED1BC12977B5CA00E6929B /* LazyVGridExample.swift in Sources */,
 				1A7D20DD2963F63400FE61A1 /* AnimateTransitionView.swift in Sources */,
 				1AC8020C29624E6600F95F57 /* AnimationListView.swift in Sources */,
 			);
