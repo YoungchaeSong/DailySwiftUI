@@ -16,6 +16,8 @@
 		1A352C68295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */; };
 		1A4EBCD729650095007DF02C /* ParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EBCD629650095007DF02C /* ParallaxEffect.swift */; };
 		1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A603859295EB5D200DA67DA /* AnimatingCircle.swift */; };
+		1A76EFE02978C4C500AE448F /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76EFDF2978C4C500AE448F /* SwipeCardView.swift */; };
+		1A76EFE22978C4CF00AE448F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A76EFE12978C4CF00AE448F /* CardView.swift */; };
 		1A7D20D629639F3700FE61A1 /* RefactoringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D20D529639F3700FE61A1 /* RefactoringListView.swift */; };
 		1A7D20D829639FD300FE61A1 /* PerformanceTuning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D20D729639FD300FE61A1 /* PerformanceTuning.swift */; };
 		1A7D20DB2963F00100FE61A1 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D20DA2963F00100FE61A1 /* SettingView.swift */; };
@@ -61,6 +63,8 @@
 		1A352C67295D3743008DDC49 /* DailySwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1A4EBCD629650095007DF02C /* ParallaxEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxEffect.swift; sourceTree = "<group>"; };
 		1A603859295EB5D200DA67DA /* AnimatingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingCircle.swift; sourceTree = "<group>"; };
+		1A76EFDF2978C4C500AE448F /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
+		1A76EFE12978C4CF00AE448F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1A7D20D529639F3700FE61A1 /* RefactoringListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoringListView.swift; sourceTree = "<group>"; };
 		1A7D20D729639FD300FE61A1 /* PerformanceTuning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTuning.swift; sourceTree = "<group>"; };
 		1A7D20DA2963F00100FE61A1 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		1A352C49295D3741008DDC49 /* DailySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1A76EFDE2978C4A400AE448F /* SwipeCard */,
 				1AED1BBF2977B59E00E6929B /* Gride */,
 				1A7D20D229639E8500FE61A1 /* Refactoring */,
 				1AC80206296248B100F95F57 /* LongPress */,
@@ -180,6 +185,15 @@
 				1A4EBCD8296504F5007DF02C /* Elevator */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		1A76EFDE2978C4A400AE448F /* SwipeCard */ = {
+			isa = PBXGroup;
+			children = (
+				1A76EFDF2978C4C500AE448F /* SwipeCardView.swift */,
+				1A76EFE12978C4CF00AE448F /* CardView.swift */,
+			);
+			path = SwipeCard;
 			sourceTree = "<group>";
 		};
 		1A7D20D229639E8500FE61A1 /* Refactoring */ = {
@@ -359,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A76EFE02978C4C500AE448F /* SwipeCardView.swift in Sources */,
 				1A60385A295EB5D200DA67DA /* AnimatingCircle.swift in Sources */,
 				1AC802102962629000F95F57 /* RecordBoxView.swift in Sources */,
 				1A7D20D829639FD300FE61A1 /* PerformanceTuning.swift in Sources */,
@@ -368,6 +383,7 @@
 				1AC8020E29625D4200F95F57 /* Router.swift in Sources */,
 				1A352C4B295D3741008DDC49 /* DailySwiftUIApp.swift in Sources */,
 				1AC8021529626D1400F95F57 /* RecordPlayer.swift in Sources */,
+				1A76EFE22978C4CF00AE448F /* CardView.swift in Sources */,
 				1A7D20DB2963F00100FE61A1 /* SettingView.swift in Sources */,
 				1AC8020A29624E4500F95F57 /* GestureListView.swift in Sources */,
 				1AED1BC32977BFA200E6929B /* LazyHGridExample.swift in Sources */,
