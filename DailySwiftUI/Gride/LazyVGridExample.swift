@@ -13,7 +13,7 @@ struct LazyVGridExample: View {
     
     private var colors: [Color] = [.red, .blue, .yellow, .purple, .gray, .pink]
     
-//    private var gridItemLayout = [GridItem(.flexible(), spacing: 20), GridItem(.flexible(), spacing: 20), GridItem(.flexible(), spacing: 20)]
+    private var gridItemLayout = [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)]
     
 //    private var gridItemLayout = Array(repeating: GridItem(.flexible(), spacing: 20), count: 3)
     
@@ -21,14 +21,13 @@ struct LazyVGridExample: View {
     
 //    private var gridItemLayout = [GridItem(.fixed(100)), GridItem(.fixed(200))]
     
-    private var gridItemLayout = [GridItem(.fixed(150)), GridItem(.adaptive(minimum: 50))]
+//    private var gridItemLayout = [GridItem(.fixed(150)), GridItem(.adaptive(minimum: 50))]
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: gridItemLayout, spacing: 20) {
                 ForEach((0...999), id: \.self) {
                     Image(systemName: symbols[$0 % symbols.count])
-//                        .resizable()
                         .font(.system(size: 30))
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
                         .background(colors[$0 % colors.count])

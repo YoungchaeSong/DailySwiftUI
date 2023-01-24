@@ -56,7 +56,6 @@ struct SwipeCardView: View {
             GeometryReader { geometry in
                 VStack {
                     DateView()
-                    Text("\(maxID)")
                     ZStack {
                         ForEach(self.users, id: \.self) { user in
                             // ~= : 대상이 특정 범위에 속하는지 범위를 체크하는 연산자
