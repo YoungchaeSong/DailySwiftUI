@@ -128,6 +128,7 @@
 		1A352C49295D3741008DDC49 /* DailySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1AF40CF32AA6E4C3007576FF /* Networking */,
 				1A76EFDE2978C4A400AE448F /* SwipeCard */,
 				1AED1BBF2977B59E00E6929B /* Gride */,
 				1A7D20D229639E8500FE61A1 /* Refactoring */,
@@ -240,6 +241,13 @@
 				1AED1BC22977BFA200E6929B /* LazyHGridExample.swift */,
 			);
 			path = Gride;
+			sourceTree = "<group>";
+		};
+		1AF40CF32AA6E4C3007576FF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
